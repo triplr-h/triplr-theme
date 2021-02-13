@@ -1,7 +1,8 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
         </div><!-- end .row -->
-    </div>
+        <!-- 这个是在header.php的最后定义的两个div -->
+    </div><!-- end .container -->
 </div><!-- end #body -->
 
 <footer id="footer" role="contentinfo">

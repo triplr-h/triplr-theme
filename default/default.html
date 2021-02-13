@@ -3,7 +3,6 @@
 <html class="no-js">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="renderer" content="webkit" />
     <meta
@@ -127,7 +126,7 @@
     <!-- end #header -->
     <div id="body">
       <div class="container">
-        <div class="row">
+        <div class="row"><!-- 到此为止header.php文件结束 -->
           <div class="col-mb-12 col-8" id="main" role="main">
             <article
               class="post"
@@ -385,7 +384,7 @@
                 </p>
               </div>
             </article>
-
+            <!-- 这里是pageNav的 输出 内容 -->
             <ol class="page-navigator">
               <li class="current">
                 <a href="http://triplr.top/index.php/page/1/">1</a>
@@ -395,8 +394,10 @@
                 <a href="http://triplr.top/index.php/page/2/">后一页 »</a>
               </li>
             </ol>
+
           </div>
           <!-- end #main-->
+          <!-- 在index.php中自定义的首页已经结束了，下面是sidebar.php和footer.php -->
 
           <div
             class="col-mb-12 col-offset-1 col-3 kit-hidden-tb"
@@ -497,6 +498,7 @@
             </section>
           </div>
           <!-- end #sidebar -->
+          <!-- 从下面开始就是footer的文件内容了 -->
         </div>
         <!-- end .row -->
       </div>
@@ -509,7 +511,7 @@
       <a href="http://www.beian.miit.gov.cn/">沪ICP备20003406号</a>
     </footer>
     <!-- end #footer -->
-
+    <!-- $this->footer();中的内容，以及一些插件 -->
     <script
       type="text/javascript"
       src="./default_files/Meting.min.js.下载"

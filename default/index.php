@@ -14,6 +14,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 <div class="col-mb-12 col-8" id="main" role="main">
 	<?php while($this->next()): ?>
+		<!-- 循环输出每一个article，在设置里面可以设，现在是5篇 -->
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 			<h2 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
 			<ul class="post-meta">
