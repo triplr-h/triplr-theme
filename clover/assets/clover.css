@@ -1,0 +1,311 @@
+/* - global - */
+/*------------*/
+
+a {
+    color: #3e3e3e;
+}
+
+a:hover {
+    color: #3e3e3e;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.4rem;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+.navbar {
+    padding: 0.3rem 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* - main - */
+/*----------*/
+
+#main {
+    padding: 1.5rem 0;
+    margin-top: 4.0rem;
+}
+
+#main img {
+    height: auto;
+    transition: filter .3s;
+}
+
+.page-title,
+.edit-link {
+    display: inline-block;
+}
+
+.post-content img,
+.comment-content img,
+.post-content video,
+.comment-content video {
+    max-width: 100%;
+}
+
+.post-content h1:before,
+.page-content h1:before {
+    opacity: .5;
+    content: "#";
+    margin-right: .3rem;
+}
+
+.post-content h2:before,
+.page-content h2:before {
+    opacity: .5;
+    content: "##";
+    margin-right: .3rem;
+}
+
+.post-content h3:before,
+.page-content h3:before {
+    opacity: .5;
+    content: "###";
+    margin-right: .3rem;
+}
+
+.post-content a {
+    text-decoration: underline;
+}
+
+blockquote {
+    padding: 0.5rem;
+    background: #F0F0F0;
+}
+
+blockquote p:before {
+    opacity: .5;
+    margin-right: .3rem;
+    content: ">";
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* - article list  - */
+/*-------------------*/
+
+.archive-title {
+    text-align: center;
+    /*margin-top: 1em;*/
+    margin-bottom: 1.5rem;
+}
+
+.page-navigator {
+    list-style: none;
+    margin: 25px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.page-navigator li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.page-navigator a {
+    display: inline-block;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.page-navigator a:hover {
+    background: #EEE;
+    text-decoration: none;
+}
+
+.page-navigator .current a {
+    color: #444;
+    background: #EEE;
+}
+
+/* - post comments - */
+/*-------------------*/
+
+/* - comments - */
+/*--------------*/
+
+.post-comments {
+    word-wrap: break-word;
+    padding-top: 15px;
+}
+
+.post-comments .comment-list {
+    margin-left: 0;
+    list-style: none;
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+.comment-children>.comment-list {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+.comment-list li {
+    padding: 14px;
+    margin-top: 10px;
+    border: 1px solid #EEE;
+}
+
+.comment-list .avatar {
+    top: 0;
+    left: 0;
+    min-width: 45px;
+    max-width: 45px;
+    float: left;
+    border-radius: 100%;
+    transition: transform .3s ease-in-out;
+}
+
+.comment-list .comment-meta {
+    float: left;
+    padding-left: .5rem;
+    margin-bottom: .5rem;
+}
+
+.comment-list .comment-meta a {
+    color: #999;
+}
+
+.comment-list .comment-author {
+    display: block;
+    margin-bottom: 3px;
+    color: #444;
+}
+
+.comment-list .comment-content {
+    clear: both;
+}
+
+.comment-content p {
+    margin: 0;
+}
+
+/* -  moments - */
+/*--------------*/
+
+.comment-list .moment {
+    padding: 14px;
+    margin-top: 0;
+    /*border: 1px solid #EEE;*/
+    border: 0;
+    border-bottom: 1px solid #EEE;
+}
+
+.comment-list .moment-meta {
+    margin-left: 55px;
+    display: block;
+}
+
+.comment-list .moment-meta a {
+    color: #444;
+}
+
+.comment-list .moment-time {
+    color: #999;
+}
+
+.comment-list .moment-time:before {
+    content: "\00b7";
+}
+
+.comment-list .moment-content {
+    clear: both;
+}
+
+.moment-meta p {
+    margin: 0;
+}
+
+/* - side bar - */
+/*--------------*/
+
+.card {
+    margin-bottom: 1rem;
+}
+
+
+.list-group-root>.list-group-item,
+.list-group-wrapper>.list-group-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.list-group-wrapper {
+    margin-top: 1px;
+}
+
+.list-group-wrapper>li {
+    padding-left: 40px;
+}
+
+/* - footer  - */
+/*-------------*/
+
+.turn-up {
+    right: 20px;
+    bottom: 60px;
+    padding: .5em .6em;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    transform: translateX(60px);
+    transition: color .3s, border .3s, background .3s, transform .3s;
+}
+
+.turn-up.active {
+    transform: translateX(0);
+}
+
+.turn-up:before {
+    width: 1.5em;
+    display: block;
+    text-align: center;
+}
+
+.turn-up i {
+    font-size: 30px;
+}
+
+.footer {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer {
+    font-size: .875rem;
+}
